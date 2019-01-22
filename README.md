@@ -9,4 +9,8 @@ Estão sendo desenvolvidas as interfaces do site.
 
 ## Comandos:
 
-1. **npm install**: install node.js dependencies
+1. **npm install**: instala todas as dependências do projeto.
+
+## Endpoints disponivels:
+
+
