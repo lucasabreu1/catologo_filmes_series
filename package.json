@@ -1,0 +1,19 @@
+{
+  "name": "catalogo_filmes_series",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "pejs": "^0.6.5",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Abreu",
+  "license": "ISC"
+}

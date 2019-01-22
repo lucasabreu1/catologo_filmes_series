@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="row main-content">
+			
+			<div class="primeira col-md-6">
+				<p>O melhor conteúdo de Filmes e Seriados</br> você encontra aqui!</p>
+			</div>
+			
+			<div class="segunda col-md-6 caroussel-container">
+					<img id="img-container" src="https://picsum.photos/450/350/?image=501">						
+			</div>
+
+		</div>
+			<button id="prevBtn">Prev</button>
+			<button id="nextBtn">Prev</button>
+
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+
+	var imgs_urls=[
+
+		'https://picsum.photos/450/350/?image=502',
+		'https://picsum.photos/450/350/?image=503',
+		'https://picsum.photos/450/350/?image=504',
+		'https://picsum.photos/450/350/?image=505'
+	];
+
+	var images = [];
+
+	function loadImages(){
+		for(var i=0; i<imgs_urls.length; i++)
+		{
+			var img = new Image();
+			img.src = imgs_urls[i];
+			console.log(img.src);
+			images[i] = img;
+		}
+	}
+
+	loadImages();
+
+	var current=0;
+	var max_imagens = images.length-1;
+	var attach_to = document.images[0];
+	var first_image = $(attach_to).clone();
+
+	images.unshift(first_image[0]);
+
+
+
+			$('#img-container').fadeOut(300, function(){
+				$(this).attr('src', images[current]).bind('onreadystatechange load', function(){
+					if (this.complete) $(this).fadeIn(300);
+				});
+			});
+
+
+
+	// setInterval(function(){
+	// 	if(current == images.length){
+	// 		current = 0;
+
+
+	// 		$('#img-container').fadeOut(300, function(){
+	// 			$(this).attr('src', images[current]).bind('onreadystatechange load', function(){
+	// 				if (this.complete) $(this).fadeIn(300);
+	// 			});
+	// 		});
+
+
+
+	// 		current++;
+	// 	}
+	// 	else{
+	// 		$(attach_to).attr("src",images[current].src);
+	// 		current++;
+	// 	}
+
+	// },1000);
+
+</script>
