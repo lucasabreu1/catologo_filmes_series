@@ -9,7 +9,7 @@ Estão sendo desenvolvidas as interfaces do site.
 
 ## Comandos:
 
-1. **npm install**: instala todas as dependências do projeto.
+* **npm install**: instala todas as dependências do projeto.
 
 ## Endpoints disponivels:
 
