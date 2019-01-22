@@ -7,3 +7,6 @@ e muito mais..
 Consiste em um banco de dados implementado em PostgreSQL, e uma aplicação Web escrita em Node.js.
 Estão sendo desenvolvidas as interfaces do site.
 
+## Comandos:
+
+1. **npm install**: install node.js dependencies
