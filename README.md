@@ -10,8 +10,8 @@ Estão sendo desenvolvidas as interfaces do site.
 ## Comandos:
 
 * **npm install**: instala todas as dependências do projeto.
-* **node index.js** inicia o servidor
+* **node index.js** inicia o servidor locamente
 
 ## Endpoints disponivels:
 
-* <server-ip>:3000/  Mostra a página principal do site
+* localhost:3000/  Mostra a página principal do site
