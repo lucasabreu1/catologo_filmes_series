@@ -14,4 +14,4 @@ Estão sendo desenvolvidas as interfaces do site.
 
 ## Endpoints disponivels:
 
-* /  Mostra a página principal do site
+* <server-ip>:3000/  Mostra a página principal do site
