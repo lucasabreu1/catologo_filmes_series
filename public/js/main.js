@@ -5,8 +5,8 @@ $(function(){
 
 	//configuration
 	var width = 450;
-	var animationSpeed = 1000;
-	var pause = 3000;
+	var animationSpeed = 10;
+	var pause = 4000;
 	var currentSlide = 1;
 
 	//cache DOM

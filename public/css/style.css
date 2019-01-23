@@ -1,13 +1,27 @@
 .header{
-	padding: 70px 0px;
 	background-color: #171717;
 	color: #ffffff;
-	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 
+.header-content{
+	height: 60px;
+	margin-right: 0px;
+	margin-left: 0px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.search-div{
+	margin-bottom: 0px !important;
+}
+
 .site-title{
-	font-size: 43px;
+	margin-bottom: 0px;
+	font-size: 30px;
 }
 
 
