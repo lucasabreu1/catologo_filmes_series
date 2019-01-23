@@ -12,6 +12,6 @@ Estão sendo desenvolvidas as interfaces do site.
 * **npm install**: instala todas as dependências do projeto.
 * **node index.js** inicia o servidor locamente
 
-## Endpoints disponivels:
+## Endpoints disponiveis:
 
 * localhost:3000/  Mostra a página principal do site
